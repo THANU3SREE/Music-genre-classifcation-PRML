@@ -307,10 +307,10 @@ import numpy as np
 classifiers = ['Decision Tree', 'AdaBoost', 'Logistic Regression', 'Naive Bayes', 'KNN']
 
 # Get the best mean cross-validated scores from the respective GridSearchCV objects
-best_scores = [grid_search.best_score_, adaboost_GridSearch.best_score_, gridsearch_lg.best_score_, naive_bayes_best_score, knn_mean_score]
+best_scores = [grid_search.best_score_, adaboost_GridSearch.best_score_, gridsearch_lg.best_score_, mean_accuracy_naive_bayes, knn_mean_score]
 
 # Get the mean scores from cross-validation
-mean_scores = [cv_decisiontree.mean(), adaboost_cv_scores.mean(), cv_scores_lg.mean(), naive_bayes_mean_score, knn_mean_score]
+mean_scores = [cv_decisiontree.mean(), adaboost_cv_scores.mean(), cv_scores_lg.mean(), mean_accuracy_naive_bayes, knn_mean_score]
 
 # Set the width of the bars
 bar_width = 0.35
